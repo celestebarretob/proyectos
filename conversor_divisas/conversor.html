@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conversor.css">
+    <title>Conversor de divisas</title>
+</head>
+<body>
+<div class="conversor">
+    <div id="money"><img class="img-conversor" src="flujo-de-dinero.png" alt="money" /></div>
+    <h1>Conversor de divisas</h1>
+    <div id="bloque">
+    <div class ="subtitol">Valor:</div> <input type= "text" id="cantidad" value="0" onchange="convertir()">
+    </br></br>
+    </div>
+    <div id="bloque-dos">
+    <div class ="subtitol">Convertir de:</div>
+    <select id="de" onchange="convertir()">
+        <option value="1">Euro</option>
+    <option value="2">Dolar</option>
+    <option value="3">Yen</option>
+    </select>
+    <div class ="subtitol">a:</div> 
+    <select id="a" onchange="convertir()">
+    <option value="1">Euro</option>
+    <option value="2">Dolar</option>
+    <option value="3">Yen</option>
+    </select><br>
+    </div>
+    <h1 id="resultado">Resultado $0.00</h1>
+    <div id="firma">By Celeste Barreto</div>
+    </div>
+    </div>
+</body>
+<script src="conversor.js"></script>
+</html>
