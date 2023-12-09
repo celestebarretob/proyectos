@@ -1,0 +1,317 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;700&display=swap');
+
+
+body{
+    background-color:#F7F1EE
+}
+#subheader{
+    text-align:center;
+    background-color:#17E48E;
+    padding: 0.3px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+}
+nav{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    text-align:center;
+    background: #F7F1EE;
+    max-width:100%;
+
+}   
+img.yondalogo{
+    margin-right: 70%;
+    padding: 10% 3% 10% 3%;
+}
+.title-menu{
+padding: 3% 3% 3% 3%;
+align-self:center;
+color:#3E3E3E;
+font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 18px;
+}
+#ctamenu{
+background: #417057;
+border-radius: 10px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 18px;
+color: white;
+border: none;
+width:200px;
+height:40px;
+align-items:center;
+margin-top:10px;
+}
+#banner{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:15px;
+    background-color:#F7F1EE
+}
+#texto-banner{
+    align-items:center;
+    margin-top:20px;   
+}
+img.banner-yonda{
+    max-width:100%;
+}
+@media(min-width: 768px){
+    nav{
+        flex-direction:row;
+        justify-content:flex-start;
+        flex-wrap: nowrap;
+        padding:1em 0em 1em 1em;
+        
+    } 
+    #all-web{
+        margin-left:2.313rem;
+    }
+    #ctamenu{
+        background: #417057;
+        border-radius: 10px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: white;
+        border: none;
+        width:123px;
+        height:40px;
+        align-items:center;
+        margin-left:53px;
+        }
+        #banner{
+            display:flex;
+            flex-wrap: nowrap;
+            margin-top:15px;
+        }
+        #texto-banner{
+            margin-right: 2.063rem;
+        }      
+        img.yondalogo{
+            margin-right: 10%;
+            padding: 1em 0em;
+        }
+        .title-menu{
+            padding: .5em 1em;
+        }
+        img.banner-yonda{
+            width:50%;
+        }
+
+@media(min-width: 1020px){
+    #texto-banner{
+        margin-top:172px;
+    } 
+    img.banner-yonda{
+        width:60%;
+    }
+}
+@media(min-width: 1300px){
+            nav{
+                flex-direction:row;
+                justify-content:flex-start;
+                padding:1em 0em 1em 1em;
+                
+            } 
+            #ctamenu{
+                background: #417057;
+                border-radius: 10px;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 18px;
+                color: white;
+                border: none;
+                width:123px;
+                height:40px;
+                align-items:center;
+                margin-left:53px;
+                }
+                #banner{
+                    display:flex;
+                    flex-wrap: nowrap;
+                    margin-top:15px;
+                }
+                #all-web{
+                    margin-left:10.313rem;
+                }
+                #texto-banner{
+                    margin-top:172px;
+                    margin-right: 10.063rem;
+                }      
+                img.yondalogo{
+                    margin-right: 10%;
+                    padding: .5em 0em;
+                }
+                .title-menu{
+                    padding: .5em 1em;
+                }
+                img.banner-yonda{
+                    width:100%;
+                }
+            }                                
+@media(min-width: 1900px){
+    #texto-banner{
+    margin-right: 18.063rem;
+    }
+    img.banner-yonda{
+        width:110%;
+    }
+    img.yondalogo{
+        margin-right: 18%;
+    }
+}
+}
+h1{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 56px;
+    color: #3E3E3E;
+    
+}
+p.texto-secundario{   
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 28px;
+color: #3E3E3E;
+text-align: left;
+}
+#cta-banner{
+background: #417057;
+border-radius: 10px;
+padding:15px;
+width:160px;
+height:48px;
+color: white;
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 18px;
+border: none;
+}
+
+#ventajas{
+    display:grid;
+    column-gap: 43px;  
+    row-gap: 43px;  
+}
+.ventaja-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+}
+.ventaja-2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.ventaja-3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.ventaja-4{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+@media(min-width: 798px){
+#ventajas{
+    display:grid;
+    column-gap: 43px;
+    row-gap: 0px;
+    margin-right:161px;
+    
+}
+.ventaja-1{
+    grid-column-start: 1;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+  justify-self: center;
+}
+.ventaja-2{
+    grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+}
+.ventaja-3{
+    grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: row1-start;
+  grid-row-end: 4;
+}
+.ventaja-4{
+    grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: row1-start;
+  grid-row-end: 5;
+}
+h2{
+   font-family: Playfair Display;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 40px;
+   line-height: 40px;
+   text-align: center;
+   letter-spacing: 0.1px;
+   margin-right: 161px;
+   margin-top: 150px;
+   margin-bottom:112px;
+}
+}
+.titol{
+    text-align:center;
+    font-family: Playfair Display;
+font-style: normal;
+font-weight: bold;
+font-size: 25px;
+line-height: 25px;
+text-align: center;
+letter-spacing: 0.1px;
+color: #3E3E3E;
+margin-bottom:16px;
+margin-top: 20px;
+}
+.descripcion{
+text-align:center;
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+color: #3E3E3E;
+}
+img.ilus-vent{
+align-self: center;
+position: relative;
+left: 70px;
+right: 10px;
+}
