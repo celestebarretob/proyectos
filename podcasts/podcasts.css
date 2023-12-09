@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;300;400&display=swap');
+
+*{
+  font-family:"Lato", sans-serif;
+}
+
+  /* Cabecera */
+/* Logo que conduce a la home */
+.letters{
+  display:none;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.ducklogo {
+  width: 30px;
+}
+/* Búsqueda de podcasts */
+input {
+  border: 1.5px solid;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+.lupa {
+  width: 25px;
+  margin-left: 0.1rem;
+}
+  
+ /* Flexbox */
+.cabecera {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.duckhome {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.search {
+  display: flex;
+  align-items: center;
+}  
+header .img-header {
+  max-width: 100%;
+  background-color:gainsboro;
+  position:relative;
+  top:30px;
+ }
+/*MOBILE*/
+h1 {
+  grid-column:2/3;
+  grid-row: 1;
+  text-align:center;
+  letter-spacing: 3px;
+  font-family: 'Staatliches', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  }
+#subtitol {
+  grid-column: 2/3;
+  grid-row: 2;
+  justify-self: baseline;
+  text-align:center;
+  font-family: 'Staatliches', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  }
+  p {
+    text-align: center;
+    margin-bottom:30px;
+  }
+  article{
+    text-align:center;
+    margin-bottom:100px;
+  }
+  a {
+    text-decoration:none;
+  }
+.share {
+  grid-column:2/3;
+  text-align:center;
+  margin-top:60px;
+  margin-bottom:100px;
+}
+#listado-podcasts{
+  margin-top: 50px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+#podcasts{
+  grid-column:2/3;
+  grid-row: 3;
+}
+.img-pod {
+max-width:50%;
+}
+.titulo-podcast{
+  padding: 2px;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  border-radius: 25px;
+  border: 2px solid black;
+  display: block;
+  width: 120px;
+  margin-left: 32%;
+  margin-top: 10px;
+}
+.img-rrss {
+  max-width:15%;
+}
+
+    /*footer*/
+footer{
+  display:flex;
+  flex-direction:column;
+  background-color:black;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color:white;
+  font-size:18px;
+}
+#nombre-radio{
+font-weight: 700;
+}
+li{
+vertical-align:top;
+justify-items:center;
+list-style-type:none;
+font-size:16px;
+color:white;
+margin-top:10px;
+}
+.configuracion{
+padding-left: 10px;
+padding-right:0px; 
+border-right: 0px;
+}
+#duckfooter {
+margin-top:50px;
+width:100px;
+text-align:center;
+justify-content:center;
+}
+ul{
+  margin-right:40px;
+  }
+/*IPAD - IPAD PRO*/
+@media (min-width: 768px) {
+  .titulo-podcast{
+    margin-left: 0px;
+  }
+.letters {
+    display:block;
+    font-size: 25px;
+    margin-left: 0.4rem;
+    color: #000000;
+    margin: 0 0 0 0.5rem;
+}
+.cabecera {
+  flex-direction:row;
+}
+#listado-podcasts{
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1.5fr auto;
+  grid-gap:2rem;
+}
+#podcasts{
+  grid-column:2/3;
+  grid-row: 3;
+  display:inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+h1 {
+  font-size: 40px;
+  }
+p {
+  margin-bottom:0px;
+}
+#subtitol {
+  font-size: 22px;
+}
+.img-rrss {
+ max-width:30%;
+ }
+ .img-pod {
+  max-width:100%;
+}
+
+ /*footer*/
+ li{
+  display:inline-block;
+  vertical-align:top;
+  padding-left: 10px;
+  padding-right:10px;
+  font-size:16px;
+  color:white;
+  border-right: 1px solid #fff;
+  margin-top:50px;
+}
+  footer{
+    height:20rem;  
+}
+ul{
+ margin-right:0px;
+}
+}     
+  /*HOVER EN DESKTOP*/
+@media (min-width: 1200px) {
+  article{
+    margin-bottom:0px;
+    display:inline-block;
+    position:relative;
+  }
+  .titulo-podcast{
+    position:absolute;
+    top:60%;
+    left:10%;
+    right:10%;
+    z-index:-1;
+    padding:10px;
+    margin:0;
+    font-size:20px;
+    font-weight:700;
+    border-radius: 0px;
+    border: 0px;
+    width: auto;
+  }
+  .img-pod:hover {
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+    z-index:-1;
+  }
+  .img-pod:hover .titulo-podcast {
+    z-index: 10;
+  }
+}
