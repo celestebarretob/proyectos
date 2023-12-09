@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+*{
+  font-family: 'Allerta Stencil', sans-serif;
+}
+
+h1{
+  position:relative;
+  top:15px;
+  font-size:50px;
+  text-align:center;
+}
+p {
+  font-size:24px;
+  text-align:center;
+}
+#acciones{
+  margin-top:30px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+}
+#caja-1{
+  width:100%;
+  margin-top:50px;
+  margin-bottom:50px;
+  align-items:center;
+}
+#caja-2{
+  width:100%;
+  margin-top:50px;
+  margin-bottom:50px;
+  align-items:center;
+}
+#listapelis{
+  font-size:25px;
+  text-align:center;
+  color: white;
+  background-color:blueviolet;
+}
+#todo-peliculas{
+  background-color:#E5EBEA;
+}
+button{
+  text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #c77dff;
+    border-radius: 20px;
+    border: 2px solid #c77dff;
+}
+button:hover{
+  background-color:white;
+  color:#c77dff;
+}
+@media(min-width: 768px){
+#acciones{
+  margin-top:30px;
+  display:flex;
+  flex-direction:row;  
+  justify-content: center;
+}
+    }
